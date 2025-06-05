@@ -3,9 +3,11 @@ import random
 
 num = random.randint(0,1)  #generates a random number 0~1 
 
+
 if num > .5:
   print('Heads')
 else:
   print('Tails')
 
+print('Your number was  ' +str(num) )
 
