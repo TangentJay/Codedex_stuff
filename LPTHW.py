@@ -8,9 +8,9 @@ my_hair = 'black'
 
 #fstrings  or fotmat strings
 
-print(f'Let\s talk about {my_age}.')
+print(f'Let\s talk about {my_name}.')
 print(f'He"s {my_height} inches tall')
-print(f'He"s {my_weight} es pounds light ')
+print(f'He"s {my_weight}  pounds light ')
 print('Pretty light!')
 print(f'He"s got {my_eyes} eyes and {my_hair} hair. ')
 print(f'His teeth are usually {my_teeth} depending on  the care.')
