@@ -35,4 +35,10 @@ print("<") #less than
 print('>=')# greater than or equal to
 print('<=')# less than or equal to
 
+# logican operations 
+"""
+and returns True if both conditions are True, and returns False otherwise.
+or returns True if at least one of the conditions is True, and False otherwise.
+not returns True if the condition is False, and vice versa.
+"""
 
