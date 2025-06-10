@@ -10,8 +10,10 @@ print(4+2) # addition(+)
 print(4-2) # subtracttion(-)
 print(4*2) # multiplication(*)
 print(4/2) #division
-print(4%2)# modulus  (%% in R)
+print(4%2)# modulus   (%% in R)
 print(3//2) # floor division
+
+# % divisibility test if 0, then divides evenly
 
 #check data types
 print(type(10))  #int   immutable?
@@ -42,3 +44,8 @@ or returns True if at least one of the conditions is True, and False otherwise.
 not returns True if the condition is False, and vice versa.
 """
 
+# .lower() 
+#(argument tu pass) calling a function or method  
+
+# while loopz keep going WHILE a condition es n true
+# for loopz repeats a specific number of times or throug stuff
