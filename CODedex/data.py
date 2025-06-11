@@ -1,3 +1,4 @@
+#June 4, 2025,6:10:49 PM
 #Divison (/)
 #floor division (//)
 #modulus  (%)
@@ -27,6 +28,18 @@ print(type((4.5,3.6,8.8))) #tuple  immutable
 print(type(4==2)) #Bool  equal
 print(type(4>=2)) #bool > or e to
 
+print("abs()returnes the absolute value of a number") 
+print('celi()returnes the ceiling value of a number')
+print('max() returnes the largest value in a set of numbers')
+print("min()returnes the smallest value in a num  ")
+print("pow(x,y) returnes the power of x to y")
+print("sqrt() returnes the square root of a number")
+print("random() returnes a random value")
+print("randrange(start,stop,step) returnes a rnd value from a particular rng ")
+print("sin(x) returnes the sin value of a num ")
+print("COS(x)returnes the cosine valur of a num ")
+print("TAN(x)returnes the tangent value if a number ")
+#len() takes exactly one argument
 
 #relational operators | conditions
 
@@ -49,3 +62,21 @@ not returns True if the condition is False, and vice versa.
 
 # while loopz keep going WHILE a condition es n true
 # for loopz repeats a specific number of times or throug stuff
+
+# I can also str() in a variable 
+#txt2=str(4)
+
+#list stuff
+"""
+.append()	Add an item to the end of the list
+.clear()	Remove all items from the list
+.copy()	    Return a shallow copy of the list
+.count()	Return the number of times the value appears in the list
+.extend()	Appends another list to the current list by extending it
+.index()	Returns the index of a value inside the list
+.insert()	Insert an item at a specified position in the list
+.pop()	    Remove an item from a specified position in the list
+.remove()	Remove an item from the list based on the value of the item
+.reverse()	Reverses the list in place
+.sort()	    Sorts the list in place
+"""
