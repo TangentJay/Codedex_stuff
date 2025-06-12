@@ -80,3 +80,6 @@ not returns True if the condition is False, and vice versa.
 .reverse()	Reverses the list in place
 .sort()	    Sorts the list in place
 """
+
+
+#https://docs.python.org/3/library/functions.html
