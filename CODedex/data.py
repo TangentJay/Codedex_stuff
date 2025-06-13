@@ -83,3 +83,4 @@ not returns True if the condition is False, and vice versa.
 
 
 #https://docs.python.org/3/library/functions.html
+# wie geht = hoiw are you

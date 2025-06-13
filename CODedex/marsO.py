@@ -24,6 +24,6 @@ happy_birthday()
 def happy_birthday(nombre):
     print('happy birthday to you')
     print('happy birthday to you')
-    print('happy birthday dear '  +nombre)
+    print('happy birthday dear '  + nombre)
     print('happy birthday to you')
 happy_birthday('bill')
