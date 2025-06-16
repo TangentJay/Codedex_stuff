@@ -83,4 +83,17 @@ not returns True if the condition is False, and vice versa.
 
 
 #https://docs.python.org/3/library/functions.html
-# wie geht = hoiw are you
+# wie geht = how are you
+
+#Class/objects 6/14/2025
+#class x: # template for creating something
+#object = an instance (real example) of un class
+#_init_ method that sets up objects attributes
+#self refers to the current object inside the class
+# vars Return the __dict__ attribute for a module, class, instance, or any other object with a __dict__ attribute.
+#class x: #something=   class attributes / class variables
+
+"""we need to give each attribute in the class a default or 
+"dummy" value that
+doesn't actually get passed on to the objects we create.
+"""

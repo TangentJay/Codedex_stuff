@@ -72,3 +72,13 @@ doubleintro=intro+intro
 
 # Print out doubleintro
 print(doubleintro)
+
+#print the number of occurences of the letter I in z
+z="imagination"
+print(z.count('i'))
+
+import numpy as np
+costs = np.column_stack(([3, 2, 1, 3], 
+                         [7, 6, 6, 5]))
+mean_costs = np.mean(costs[:,0])
+print(mean_costs)

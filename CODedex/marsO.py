@@ -21,9 +21,11 @@ def happy_birthday(): #
     
 happy_birthday()
 
-def happy_birthday(nombre):
+def happy_birthday(nombre): #nombre is the parameter
     print('happy birthday to you')
     print('happy birthday to you')
-    print('happy birthday dear '  + nombre)
+    print('happy birthday dear ' ,  nombre)
     print('happy birthday to you')
-happy_birthday('bill')
+happy_birthday('bill') #bill is the argument
+
+
