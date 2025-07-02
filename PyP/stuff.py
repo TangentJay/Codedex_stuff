@@ -12,3 +12,7 @@ elif age <16 and age > 12:
     print("Can see pg moviez")
 else:
     print('Can only see kidz stuff')
+    
+print(' -------------------')
+print(f'|{age}     tu age    {age}|')
+print(' -------------------')

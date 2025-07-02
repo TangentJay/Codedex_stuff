@@ -21,3 +21,16 @@ Created on Thu Jun 12 07:24:14 2025
 # that adds a and b then multiplies the result by c. Include a 
 # \last line in your code to print the value: print(total)
 
+import numpy as np
+x=5
+y=8
+z=x+y
+a= np.log2(z)
+print(x,y)
+print(round(a))
+
+#finger exercise
+e=4
+b=20
+c=69
+print((e+b)*c)

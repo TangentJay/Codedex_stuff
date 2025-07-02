@@ -24,3 +24,4 @@ print(area)
 print(float(123))
 print(int(7.2))
 float(round(7.9))
+

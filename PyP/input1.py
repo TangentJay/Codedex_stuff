@@ -6,8 +6,8 @@ Note: for this exercise, the expectation is that you explicitly write
 
 #input name
 name=input('Please enter your name: ')
-print(f'Hello {name}, Please entrey your age: ')
+print(f'Hello {name}, Please  your age: ')
 age=int(input('Please enter your age: '))
 
-print(3* \n f'Hello {name}, you"re {age} years old')
+print(3* f'Hello {name}, you"re {age} years old')
 
