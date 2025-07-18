@@ -1,0 +1,14 @@
+Reading/Writing Files
+ https://docs.python.org/3/library/functions.html#open
+read ('r'), write ('w'), and append ('a') to files.
+
+String Formatting (f-strings)
+https://docs.python.org/3/library/string.html#format-specification-mini-language
+
+Datetime
+https://docs.python.org/3/library/datetime.html#strftime-and-strptime-format-codes
+control timestamps better.
+
+Requests Module
+https://requests.readthedocs.io/en/latest/user/quickstart/
+This is the engine that pulls the crypto data.
