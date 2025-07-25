@@ -60,3 +60,11 @@ Exits the loop immediately.
 Skips the current iteration and continues with the next.
 
 """
+
+"""
+.min() Return the minimum value of an array.
+.max() Return the maximum value of an array.
+.sum() Return the total sum of an array's values.
+.average() Return the average value of an array.
+
+"""
