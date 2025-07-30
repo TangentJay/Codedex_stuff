@@ -67,4 +67,10 @@ Skips the current iteration and continues with the next.
 .sum() Return the total sum of an array's values.
 .average() Return the average value of an array.
 
+
+#ord
+#char
+print(ord('A'))
+print(chr(66))
+
 """

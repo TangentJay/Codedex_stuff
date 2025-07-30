@@ -23,3 +23,4 @@ tallest_buiildings_m_rounded = np.round(tallest_buiildings_m,2)
 print(f'The tallest buildings in the world in feet: {tallest_buiildings_ft}')
 print(f'The tallest buildings in the world in meters: {tallest_buiildings_m_rounded}')
 
+print((1+1//2))
