@@ -15,4 +15,7 @@ with open('Ello.txt', 'r') as f:
 
 #l2 = bob.readline()
 #print(l2)
+def multi(a,b): return a*b
+
+print(multi(40 , 250))
 

@@ -1,0 +1,4 @@
+Round dos, here we go.
+7/26/2025, come on man 
+Just writing multiple lines
+Using the writelines() method
