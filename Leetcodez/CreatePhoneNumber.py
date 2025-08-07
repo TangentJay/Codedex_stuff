@@ -5,6 +5,7 @@
 * Company: Oosode
 * GitHub: https://github.com/TangentJay/Codedex_stuff
 '''
-def phone_number():
-    Pnum = [1,2,3,4,5,6,7,8,9,0]
-    #'('+ pnum[0:3] +')' + ' ' + pnum[3:6] + "-" + pnum[6:10]
+import random
+
+r = [random.randint(1,100) for _ in range(10) if random.randint(1,100) % 2 == 0]
+print(r)
