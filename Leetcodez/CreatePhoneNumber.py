@@ -5,6 +5,8 @@
 * Company: Oosode
 * GitHub: https://github.com/TangentJay/Codedex_stuff
 '''
+import os
+print(os.getcwd())
 import random
 
 r = [random.randint(1,100) for _ in range(10) if random.randint(1,100) % 2 == 0]
