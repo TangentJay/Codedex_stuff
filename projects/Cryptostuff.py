@@ -56,7 +56,7 @@ while True:
 
     with open('tstCoins.csv', 'a') as file:
         file.write('\n')
-    time.sleep(60)
+    time.sleep(9)
 # https://docs.python.org/3/library/datetime.html#format-codes
 # https://docs.cdp.coinbase.com/api-reference/exchange-api/rest-api/products/get-all-known-trading-pairs
 # https://docs.python.org/3/library/functions.html#open 

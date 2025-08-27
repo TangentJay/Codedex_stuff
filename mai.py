@@ -1,7 +1,7 @@
-# projects2/myapp.py
+# mai.py
 '''
 * Author: TanB
-* Created: 8/9/2025
+* Created: 8/21/2025
 * Company: Oosode
 * GitHub: https://github.com/TangentJay/Codedex_stuff
-''' 
+'''
