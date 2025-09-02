@@ -16,7 +16,7 @@ previous_prices = {}
 with open('tstCoins.csv', 'a') as file:
     file.write('timestamp,coin,price\n')# also \n to add btc on a new line
 
-#we will loop throu up to y coins for now
+#we will loop through up to y coins for now
 try:
     while True:
         print(f'\n*** Updated at {datetime.now().strftime('%H:%M:%S')} ***\n')
@@ -41,14 +41,14 @@ try:
                         elif current_price < old_price:
                             direction = '-'#prices went down
                         else:
-                            direction = '->' #if price hasen't changed
+                            direction = '-' #if price hasn't changed
                         
                         
                         print(f'[{timestamp}]: {coin}: {price} {direction}')
                     else:
                         print(f'[{timestamp}]: {coin}: {price} [new]')  #new log
                         
-                    previous_prices[coin] = current_price#saves the current price for comparison
+                    previous_prices[coin] = current_price #saves the current price for comparison
 
                 #logging results to csv file
                     
