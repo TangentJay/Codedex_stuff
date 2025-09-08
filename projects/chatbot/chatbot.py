@@ -1,6 +1,6 @@
 from openai import OpenAI
 
-client = OpenAI()
+client = OpenAI("fpp")
 
 prompt = input('prompt: ')
 
