@@ -3,7 +3,7 @@
 * Author: TanB
 * Created: 8/5/2025
 * Company: Oosode
-* GitHub: https://github.com/TangentJay/Codedex_stuff
+* GitHub: 
 '''
 import time
 from datetime import datetime
@@ -35,13 +35,15 @@ try:
                     current_price = float(price)
                     if coin in previous_prices:
                         old_price = previous_prices[coin]
+                        change = current_price - old_price
+                        changep = (current_price - old_price)/100
                     
                         if current_price > old_price:
-                            direction = '+'#price went up
+                            direction = f'Up by! ${change:.4f} {changep:.4f} %'#price went up
                         elif current_price < old_price:
-                            direction = '-'#prices went down
+                            direction = f'down by! -${abs(change):.5f},   {changep: .4f} %'#prices went down
                         else:
-                            direction = '-' #if price hasn't changed
+                            direction = f'- No changes!' #if price hasn't changed
                         
                         
                         print(f'[{timestamp}]: {coin}: {price} {direction}')
@@ -53,7 +55,7 @@ try:
                 #logging results to csv file
                     
                     file.write(f'{timestamp},{coin},{price}\n') # NEW LINE LOL \n    
-                    print(f'[{timestamp}]: {coin}:{price}') 
+                     
 
                 else:
                     print(f'error with {coin}')   
@@ -78,3 +80,4 @@ except KeyboardInterrupt:
  
  #8/5/2025 improved while loop and added time.sleep. will adjust as I see fit. Added try/except 
  # more to do
+#9/3/2025 added the amount of change in dollars and in precentage, added emotes. Not sue for now.

@@ -5,10 +5,10 @@ from sklearn.datasets import load_iris
 import pandas as pd
 
 iris = load_iris()
-df = iris
+df = pd.DataFrame(data=iris.data, columns=iris.feature_names)
+df['target'] = iris.target
 
 print(df.head())
-
 # pin = ''
 
 # while len(pin) < 4:
@@ -17,3 +17,4 @@ print(df.head())
 #     pin = pin + str(digit)
     
 # print(f'your pin es {pin} ')
+
