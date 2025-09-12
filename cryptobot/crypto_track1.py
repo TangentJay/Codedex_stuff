@@ -54,7 +54,7 @@ try:
 
                 #logging results to csv file
                     
-                    file.write(f'{timestamp},{coin},{price}\n') # NEW LINE LOL \n    
+                    file.write(f'{timestamp},{coin},{price}\n') # NEW LINE LOL \n    p
                      
 
                 else:

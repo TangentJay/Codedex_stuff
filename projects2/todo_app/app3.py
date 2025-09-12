@@ -7,10 +7,6 @@
 ''' 
 
 
-
-
-
-
 todos = []
 while True:
     user_action = input('Type add, show or q: ')

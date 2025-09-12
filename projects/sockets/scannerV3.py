@@ -3,6 +3,7 @@ import socket
 from tqdm import tqdm
 from colorama import Fore
 from tkinter import *
+from tkinter import ttk
 
 
 def Low_tier_scanner2(host, start, stop):
@@ -36,7 +37,7 @@ def Low_tier_scanner2(host, start, stop):
         totalScanned += 1
 
 
-    print(f'total ports scanned {totalScanned}')
+    print(f'total ports scanned = {totalScanned}')
 
     
     if len(offen_portz)> 0:
