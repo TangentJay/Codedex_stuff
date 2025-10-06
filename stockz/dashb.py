@@ -33,7 +33,7 @@ import numpy as np      # Numerical operations
 # Set up the page - this MUST be the first Streamlit command
 st.set_page_config(
     page_title="Stock Trading Dashboard",  # Browser tab title
-    page_icon="📈",  # Browser tab icon
+    page_icon="UP",  # Browser tab icon
     layout="wide"    # Use full width of browser
 )
 
@@ -268,7 +268,7 @@ def main():
     """
     
     # Title and description
-    st.title("📈 Stock Trading Analysis Dashboard")
+    st.title("Stock Trading Analysis Dashboard")
     st.markdown("Simulate trades and analyze historical price movements")
     
     # Add some space
@@ -278,7 +278,7 @@ def main():
     # PART 1: TRADE CALCULATOR
     # ========================================================================
     
-    st.header("💰 Trade Calculator")
+    st.header("Trade Calculator")
     st.markdown("Calculate potential gains/losses from a trade")
     
     # Create three columns for input fields
@@ -367,7 +367,7 @@ def main():
     # PART 2: HISTORICAL ANALYSIS
     # ========================================================================
     
-    st.header("📊 Historical Price Analysis")
+    st.header("Historical Price Analysis")
     st.markdown("Fetch real stock data and analyze price movements")
     
     # Create input fields
@@ -481,7 +481,7 @@ def main():
     
     st.markdown("---")
     st.info("""
-    ### 📖 How to Use This Dashboard
+    ### How to Use This Dashboard
     
     **Trade Calculator:**
     - Enter your buy price, sell price, and invested capital
@@ -509,44 +509,3 @@ if __name__ == "__main__":
     main()
 
 
-# ============================================================================
-# LEARNING NOTES FOR FUTURE PROJECTS
-# ============================================================================
-"""
-KEY CONCEPTS YOU LEARNED:
-
-1. STREAMLIT BASICS:
-   - st.title(), st.header() - Text headers
-   - st.number_input(), st.text_input() - User inputs
-   - st.button() - Clickable buttons
-   - st.columns() - Layout in columns
-   - st.metric() - Display metrics with deltas
-   - st.plotly_chart() - Display charts
-
-2. PANDAS (DATA MANIPULATION):
-   - DataFrame - Like an Excel spreadsheet
-   - .iloc[index] - Get row by position
-   - .reset_index() - Make index a regular column
-
-3. YFINANCE (STOCK DATA):
-   - yf.Ticker(symbol) - Create stock object
-   - .history() - Get historical prices
-
-4. PLOTLY (CHARTS):
-   - go.Figure() - Create chart
-   - go.Scatter() - Line chart
-   - add_hline() - Horizontal line
-
-5. PYTHON BASICS:
-   - Functions with def
-   - Dictionaries with {}
-   - String formatting with f"{variable:.2f}"
-   - try/except for error handling
-
-NEXT STEPS:
-- Add more chart types (candlestick charts)
-- Save/load trade simulations
-- Add technical indicators (RSI, MACD)
-- Compare multiple stocks
-- Export results to CSV
-"""
