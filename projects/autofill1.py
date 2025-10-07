@@ -2,22 +2,19 @@ from pywinauto import Application
 import time
 import pyautogui
 
-# Option: choose app
-use_my_app = True   # change to False if you want Notepad instead
+# Full path to the exe on your external SSD
+app_path = r"E:\Apps\MyProgram\myprogram.exe"
 
-if use_my_app:
-    app_path = r"E:\Apps\MyProgram\myprogram.exe"
-    app = Application().start(app_path)
-    window_title = "MyProgram"   # replace with your actual app's title
-else:
-    app = Application().start("notepad.exe")
-    window_title = "Untitled - Notepad"
+# Start the app
+app = Application().start(app_path)
+
 
 # Wait for it to load
 time.sleep(3)
 
-# Attach to the window by title (or regex)
-dlg = app.window(title_re=f".*{window_title}.*")
+# Bring the app window to the front
+# (replace "MyProgram" with the actual window title)
+dlg = app.window(title_re=".*MyProgram.*")
 dlg.set_focus()
 
 # Type into the app

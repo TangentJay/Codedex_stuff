@@ -37,6 +37,27 @@ st.set_page_config(
     layout="wide"    # Use full width of browser
 )
 
+
+page_bg = """
+<style>
+.stApp {
+    background-color: green; 
+}
+body, .stApp {
+    color: yellow;  
+}
+
+h1 {
+    text-align: center;
+    color: #CEFF00;  
+}
+h2 { color: black;
+
+}
+</style>
+"""
+st.markdown(page_bg, unsafe_allow_html=True)
+
 # ============================================================================
 # SECTION 3: HELPER FUNCTIONS
 # ============================================================================
@@ -479,24 +500,24 @@ def main():
     # PART 3: INSTRUCTIONS
     # ========================================================================
     
-    st.markdown("---")
-    st.info("""
-    ### How to Use This Dashboard
+    # st.markdown("---")
+    # st.info("""
+    # ### How to Use This Dashboard
     
-    **Trade Calculator:**
-    - Enter your buy price, sell price, and invested capital
-    - Click "Calculate Trade" to see potential gains/losses
+    # **Trade Calculator:**
+    # - Enter your buy price, sell price, and invested capital
+    # - Click "Calculate Trade" to see potential gains/losses
     
-    **Historical Analysis:**
-    - Enter a stock ticker (e.g., AAPL, TSLA, GPUS)
-    - Set time range (e.g., 30 days ago to today)
-    - Click "Analyze" to fetch real stock data and see price movements
+    # **Historical Analysis:**
+    # - Enter a stock ticker (e.g., AAPL, TSLA, GPUS)
+    # - Set time range (e.g., 30 days ago to today)
+    # - Click "Analyze" to fetch real stock data and see price movements
     
-    **Tips:**
-    - The chart shows entry/exit price lines if you've calculated a trade
-    - All data is fetched from Yahoo Finance (free and real-time)
-    - You can expand "View Raw Data" to see the full dataset
-    """)
+    # **Tips:**
+    # - The chart shows entry/exit price lines if you've calculated a trade
+    # - All data is fetched from Yahoo Finance (free and real-time)
+    # - You can expand "View Raw Data" to see the full dataset
+    # """)
 
 
 # ============================================================================
