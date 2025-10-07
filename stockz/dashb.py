@@ -33,7 +33,7 @@ import numpy as np      # Numerical operations
 # Set up the page - this MUST be the first Streamlit command
 st.set_page_config(
     page_title="Stock Trading Dashboard",  # Browser tab title
-    page_icon="📈",  # Browser tab icon
+    page_icon="",  # Browser tab icon
     layout="wide"    # Use full width of browser
 )
 
