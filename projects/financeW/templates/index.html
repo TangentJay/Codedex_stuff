@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Sucffed Charts </title>
+    <style>
+        body { font-family: 'Fira Code', monospace; max-width: 800px; margin: 0 auto; padding: 20px; background: linear-gradient(to right, #80a450, #68a808);display: flex; gap: 30px;}
+        .form-group { margin: 30px 250; }
+        input, select { padding: 18px; margin: 5px 0; width: 200px; }
+        button { padding: 15px 30px; font-size: 14px; background: #06570e; color: rgba(152, 180, 28, 0.867); border: none; cursor: pointer; }
+        button:hover { background: #9f8957; }
+        .form-row{display:flex; gap: 20px; align-items: flex-end;}
+    </style>
+</head>
+<body>
+    <h1>Stonks N Krypto Generator</h1>
+    
+    <form action="/chart" method="post">
+    <div class="form-row">
+        <div class="form-group">
+            <label for="ticker">Enter Stock or Krypto Symbol:</label><br>
+            <input type="text" id="ticker" name="ticker" placeholder="@@@@" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="period">Time Period:</label><br>
+            <select id="period" name="period">
+                <option value="1mo">1 Month</option>
+                <option value="3mo" selected>3 Months</option>
+                <option value="6mo">6 Months</option>
+                <option value="1y">1 Year</option>
+                <option value="2y">2 Years</option>
+            </select>
+        </div>
+    </div>
+        <button type="submit"> Generator</button>
+    </form>
+    
+    <div style="margin-top: 30px;">
+        <!-- <h3>Some examples:</h3>
+        <ul>
+            <li>Stocks: AAPL (Apple), TSLA (Tesla), MSFT (Microsoft)</li>
+            <li>Crypto: BTC-USD (Bitcoin), ETH-USD (Ethereum), ADA-USD (Cardano)</li>
+            <li>Your example: OPEN (Opendoor Technologies)</li>
+        </ul> -->
+    </div>
+</body>
+</html>
