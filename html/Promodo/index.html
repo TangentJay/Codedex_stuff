@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <style>
+        /* Make the page look nice */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        /* Container for our timer */
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            text-align: center;
+            min-width: 350px;
+        }
+        
+        h1 {
+            margin: 0 0 30px 0;
+            color: #333;
+        }
+        
+        /* The big timer display */
+        .timer-display {
+            font-size: 72px;
+            font-weight: bold;
+            color: #667eea;
+            margin: 20px 0;
+        }
+        
+        /* Shows "Work Time" or "Break Time" */
+        .status {
+            font-size: 20px;
+            color: #666;
+            margin: 10px 0 20px 0;
+            font-weight: bold;
+        }
+        
+        /* Button container */
+        .buttons {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        
+        /* All buttons */
+        button {
+            padding: 15px 30px;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: transform 0.1s;
+        }
+        
+        button:hover {
+            transform: scale(1.05);
+        }
+        
+        button:active {
+            transform: scale(0.95);
+        }
+        
+        .start-btn {
+            background: #10b981;
+            color: white;
+        }
+        
+        .pause-btn {
+            background: #f59e0b;
+            color: white;
+        }
+        
+        .reset-btn {
+            background: #ef4444;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Scuffed Pomodoro Timer</h1>
+        <div class="status" id="status">Work Time</div>
+        <div class="timer-display" id="timer">25:00</div>
+        <div class="buttons">
+            <button class="start-btn" onclick="startTimer()">Start</button>
+            <button class="pause-btn" onclick="pauseTimer()">Pause</button>
+            <button class="reset-btn" onclick="resetTimer()">Reset</button>
+        </div>
+    </div>
+
+    <script>
+        // Variables to store our timer state
+        let timeLeft = 1500; // 25 minutes in seconds (25 * 60)
+        let timerInterval = null; // Will hold our countdown
+        let isWorkTime = true; // Track if we're in work or break mode
+
+        // Update the display with current time
+        function updateDisplay() {
+            const minutes = Math.floor(timeLeft / 60);
+            const seconds = timeLeft % 60;
+            
+            // Add leading zero if needed (e.g., 5:05 instead of 5:5)
+            const display = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+            document.getElementById('timer').textContent = display;
+        }
+
+        // Start the countdown
+        function startTimer() {
+            // Don't start multiple timers
+            if (timerInterval !== null) return;
+            
+            // Run this code every 1 second (1000 milliseconds)
+            timerInterval = setInterval(function() {
+                timeLeft--;
+                updateDisplay();
+                
+                // When timer hits zero
+                if (timeLeft === 0) {
+                    pauseTimer();
+                    alert(isWorkTime ? 'Work session done! Take a break!' : 'Break is over! Back to work!');
+                    
+                    // Switch between work and break
+                    isWorkTime = !isWorkTime;
+                    timeLeft = isWorkTime ? 1500 : 300; // 25 min or 5 min
+                    document.getElementById('status').textContent = isWorkTime ? 'Work Time' : 'Break Time';
+                    updateDisplay();
+                }
+            }, 1000);
+        }
+
+        // Pause the countdown
+        function pauseTimer() {
+            clearInterval(timerInterval);
+            timerInterval = null;
+        }
+
+        // Reset everything back to start
+        function resetTimer() {
+            pauseTimer();
+            isWorkTime = true;
+            timeLeft = 1500; // Back to 25 minutes
+            document.getElementById('status').textContent = 'Work Time';
+            updateDisplay();
+        }
+    </script>
+</body>
+</html>
