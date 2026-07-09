@@ -13,7 +13,7 @@ data = { 'OS': ['Windows', 'Mac', 'Linux'],
 
 df = pd.DataFrame(data)
 print(df.head())
-
+#creating a datafram using the List method
 dataa = [['Mr\'Jones', 'US', 1337420], ['Mate_jr', 'AUS', 4445678],  ['BobbieBoi', 'USA', 8567342], ['RAM', 'MotherBoard', 1100110]]
 
 dff = pd.DataFrame(dataa, columns=['city', 'country','population'])
