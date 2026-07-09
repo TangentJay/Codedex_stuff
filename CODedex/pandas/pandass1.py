@@ -12,8 +12,7 @@ data = { 'OS': ['Windows', 'Mac', 'Linux'],
          'price': ['affordable', 'armNleg', 'free'] }
 
 df = pd.DataFrame(data)
-
-print(df)
+print(df.head())
 
 dataa = [['Mr\'Jones', 'US', 1337420], ['Mate_jr', 'AUS', 4445678],  ['BobbieBoi', 'USA', 8567342], ['RAM', 'MotherBoard', 1100110]]
 
