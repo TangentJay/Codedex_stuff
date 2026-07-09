@@ -2,7 +2,7 @@ x = [False, True, '2', 3.0]
 print(type(x))
 
 
-print(round(1.335,4))
+print(round(1.335,2))
 # import random
 # r=0
 # while r < 50:
